@@ -1,16 +1,9 @@
 import { BellIcon, MailIcon } from '@heroicons/react/outline';
-import { SearchIcon } from '@heroicons/react/solid';
 export default function Navbar() {
   return (
     <nav className="bg-gray-600 shadow-xl">
-<<<<<<< HEAD
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
-
-        {/* Logo */}
-=======
-      <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-14">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
@@ -51,25 +44,12 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
->>>>>>> navbar
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
               <h1 className="block lg:hidden h-8 w-auto">Talk -</h1>
               <h1 className="hidden lg:block h-8 w-auto text-2xl fond-bold text-white">Talk -</h1>
             </div>
           </div>
-          
-        {/* SearchBar */}
-            <div className="relative mx-auto text-gray-600 lg:block">
-                <input
-                    className="bg-gray-400 h-10 pl-2 pr-8 rounded-md text-sm focus:outline-none placeholder-gray-600"
-                    type="search" name="search" placeholder="Search" />
-                <button type="submit" className="absolute right-0 top-0 mt-3 mr-2">
-                    <SearchIcon className="h-4 w-4 fill-current"/>
-                </button>
-            </div>
-
-        {/* Account Settings */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="mr-3 relative">
               <div>
@@ -82,7 +62,7 @@ export default function Navbar() {
                 >
                   <span className="sr-only">Open user menu</span>
                   <img
-                    className="h-6 w-6 rounded-full"
+                    className="h-8 w-8 rounded-full"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
@@ -91,19 +71,52 @@ export default function Navbar() {
             </div>
             <button
               type="button"
-              className="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               <span className="sr-only">View notifications</span>
               <BellIcon className="h-6 w-6" />
             </button>
             <button
               type="button"
-              className="ml-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="ml-2 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
             >
               <span className="sr-only">Mail</span>
               <MailIcon className="h-6 w-6" />
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className="sm:hidden" id="mobile-menu">
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#"
+            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+            aria-current="page"
+          >
+            Dashboard
+          </a>
+
+          <a
+            href="#"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Team
+          </a>
+
+          <a
+            href="#"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Projects
+          </a>
+
+          <a
+            href="#"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            Calendar
+          </a>
         </div>
       </div>
     </nav>
