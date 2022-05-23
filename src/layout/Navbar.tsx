@@ -46,8 +46,8 @@ export default function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
-              <h1 className="block lg:hidden h-8 w-auto">Talk -</h1>
-              <h1 className="hidden lg:block h-8 w-auto text-2xl fond-bold text-white logo">TALK -</h1>
+              <a href="/" className="block lg:hidden h-8 w-auto">Talk -</a>
+              <a href="/" className="hidden lg:block h-8 w-auto text-2xl fond-bold text-white logo">TALK -</a>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

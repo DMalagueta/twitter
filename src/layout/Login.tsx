@@ -9,7 +9,7 @@ export default function login() {
                         <label htmlFor="" className="block mt-3text-gray-700 text-center font-semibold text-xl">
                             Sign In
                         </label>
-                        <form method="#" action="#" className="mt-10">
+                        <form method="#" className="mt-10">
                                            
                             <div>
                                 <input type="email" placeholder="Email" className="mt-1 block border-2 w-full bg-gray-100 h-11 rounded-xl shadow-md hover:bg-blue-100 focus:bg-blue-100 focus:ring-0 p-5" />
