@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import './App.css'
 import Main from './layout/Main'
-import Navbar from './layout/Navbar'
+import Login from './layout/Login'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from './layout/Index';
 
 function App() {
 
   return (
-    <div>
-      <Navbar />
-      <Main />
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Index />}>
+              <Route index element={<Main />} />
+              <Route path='/login' element={<Login />}/>
+          </Route>
+        </Routes>
+    </BrowserRouter>
   )
 }
 

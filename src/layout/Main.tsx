@@ -22,8 +22,8 @@ export default function Main() {
 ];
     
   return (
-    <div className="grid grid-cols-3 grid-rows-1 gap-5 mt-5 p-5">
-        <div className="box bg-white rounded-lg p-5">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-20 p-5">
+        <div className="box bg-white rounded-lg p-5 hidden lg:block">
             <h1 className="text-lg"> <FireIcon className="h-7 w-7 inline"/> Tendencias</h1>
             <hr className="mt-2"/>
             <div className="flex items-center justify-between mt-5">
@@ -40,7 +40,7 @@ export default function Main() {
             </div>
         </div>
         
-        <div className="box col-start-2 col-end-4 ">
+        <div className="box lg:col-start-2 lg:col-end-4 ">
             <>
                 
                     {

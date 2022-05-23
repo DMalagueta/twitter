@@ -1,7 +1,7 @@
 import { BellIcon, MailIcon } from '@heroicons/react/outline';
 export default function Navbar() {
   return (
-    <nav className="bg-gray-600 shadow-xl">
+    <nav className="bg-gray-600 shadow-xl fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,7 +47,7 @@ export default function Navbar() {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
               <h1 className="block lg:hidden h-8 w-auto">Talk -</h1>
-              <h1 className="hidden lg:block h-8 w-auto text-2xl fond-bold text-white">Talk -</h1>
+              <h1 className="hidden lg:block h-8 w-auto text-2xl fond-bold text-white logo">TALK -</h1>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -87,38 +87,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="sm:hidden" id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
-            className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
-          >
-            Dashboard
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Team
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Projects
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Calendar
-          </a>
-        </div>
-      </div>
     </nav>
   )
 }
